@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+body{
+    font-family: 'inter', sans-serif;]
+},
+
+.hamburger-line{
+    @apply w-[30px] h-[2px] my-2 block bg-dark;
+} 
+
+
+@layer base {
+    html {
+      font-family: "Montserrat  ", sans-serif;
+    }
+  }
+
+  // tailwind.config.js
+  module.exports = {
+    // ...
+    variants: {
+     display: ['responsive', 'group-hover', 'group-focus'],
+    },
+  }
